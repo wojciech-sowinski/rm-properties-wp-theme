@@ -1,0 +1,97 @@
+.btn {
+  display: block;
+  padding: 10px 40px;
+  text-decoration: none;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  background-color: $mainDarkGray;
+  color: $white;
+  @include media.max-width(medium) {
+    font-size: 0.8rem;
+  }
+
+  &.skew {
+    transform: skewX(-30deg);
+    span {
+      display: block;
+      transform: skewX(30deg);
+      font-weight: 100;
+    }
+  }
+  &.small {
+  }
+  &.olive {
+    background-color: $oliveGreen;
+    color: $white;
+    &.transparent {
+      background-color: transparent;
+      color: $oliveGreen;
+      border: 1px solid $oliveGreen;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  &.gold {
+    background-color: $gold;
+    color: $mainDarkGray;
+    &.transparent {
+      background-color: transparent;
+      color: $mainDarkGray;
+      border: 1px solid $gold;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  &.darkGray {
+    background-color: $mainDarkGray;
+    color: $white;
+    &.transparent {
+      background-color: transparent;
+      color: $mainDarkGray;
+      border: 1px solid $mainDarkGray;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  &.mainBlue {
+    background-color: $mainBlue;
+    color: $white;
+    &.transparent {
+      background-color: transparent;
+      color: $mainBlue;
+      border: 1px solid $mainBlue;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  &.darkRed {
+    background-color: $darkRed;
+    color: $white;
+    &.transparent {
+      background-color: transparent;
+      color: $darkRed;
+      border: 1px solid $darkRed;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+a.read-more {
+  display: block;
+  color: $oliveGreen;
+  font-weight: 600;
+}
+
+button {
+  border: none;
+}

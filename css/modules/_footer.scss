@@ -1,0 +1,85 @@
+footer.site-footer {
+  border-bottom: 20px solid $mainDarkGray;
+  background-color: $lightGold;
+  color: $mainDarkGray;
+  margin-top: -10px;
+
+  > div {
+    padding: 30px 20px 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include media.max-width(large) {
+      flex-direction: column;
+      align-items: stretch;
+      row-gap: 40px;
+    }
+    .footer-menu {
+      list-style: none;
+      li {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-family: "Roboto Condensed", sans-serif;
+        border-bottom: 2px solid transparent;
+        transition: 0.3s;
+        &:hover {
+          border-bottom: 2px solid $mainDarkGray;
+        }
+      }
+    }
+    > div {
+      > a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 20px;
+        img {
+          max-width: 400px;
+          @include media.max-width(small) {
+            max-width: 300px;
+          }
+        }
+        span {
+          font-weight: 400;
+          font-size: 1.1rem;
+          @include media.max-width(small) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .footer-social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      span {
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: "Roboto";
+        border-bottom: 1px solid $mainDarkGray;
+      }
+      i {
+        font-size: 3rem;
+        margin: 10px;
+      }
+    }
+  }
+  div#owliedev-logo-container {
+    display: flex;
+    justify-content: space-between;
+    @include media.max-width(large) {
+      align-items: center;
+    }
+    a {
+      display: flex;
+      column-gap: 10px;
+    }
+    img {
+      height: 25px;
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+}

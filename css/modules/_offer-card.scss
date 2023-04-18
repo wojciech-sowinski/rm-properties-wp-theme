@@ -1,0 +1,46 @@
+.offer-cards-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.offer-card {
+  display: flex;
+  background-color: $lightGold;
+  padding: 10px;
+  img {
+    width: 300px;
+    height: 300px;
+    @include media.max-width(medium) {
+      width: 400px;
+      height: 400px;
+    }
+    @include media.max-width(small) {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @include media.max-width(medium) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer-card-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    padding: 10px 30px;
+    @include media.max-width(large) {
+      // align-items: center;
+      row-gap: 30px;
+    }
+    > :last-child {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      @include media.max-width(medium) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

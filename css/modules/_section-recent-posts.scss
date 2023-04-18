@@ -1,0 +1,38 @@
+section.recent-blog-post {
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+li.post-li-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  max-width: 1000px;
+
+  h2 {
+    text-align: center;
+  }
+  img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 150px;
+  }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid $oliveGreen;
+    @include media.max-width(medium) {
+      flex-direction: column;
+    }
+    p {
+      margin: 0;
+      padding: 20px;
+      text-align: justify;
+    }
+  }
+}

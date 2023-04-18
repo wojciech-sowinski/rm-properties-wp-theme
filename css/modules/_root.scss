@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: "Roboto", sans-serif;
+}
+
+:root {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  font-weight: 300;
+  color: $mainDarkGray;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: $mainDarkGray;
+}
+
+i {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: square;
+  li {
+    margin-left: 20px;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.84rem;
+  font-weight: 300;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.text-align {
+  &__center {
+    text-align: center;
+  }
+  &__left {
+    text-align: left;
+  }
+  &__right {
+    text-align: right;
+  }
+}
+
+.heading {
+  &__small {
+    font-size: 1.2rem;
+  }
+  &__medium {
+    font-size: 1.84rem;
+  }
+  &__large {
+    font-size: 2.4rem;
+  }
+  &__largest {
+    font-size: 4rem;
+  }
+}
+
+.float {
+  &__left {
+    float: left;
+  }
+  &__right {
+    float: right;
+  }
+  &__center {
+    margin: auto !important;
+  }
+}
+
+.font-weight {
+  &__200 {
+    font-weight: 200;
+  }
+  &__300 {
+    font-weight: 300;
+  }
+  &__400 {
+    font-weight: 400;
+  }
+  &__500 {
+    font-weight: 500;
+  }
+  &__600 {
+    font-weight: 600;
+  }
+}
+
+.top-bot_padding {
+  &__small {
+    padding: 10px 0;
+  }
+  &__medium {
+    padding: 20px 0;
+  }
+  &__large {
+    padding: 50px 0;
+  }
+}
+
+.background {
+  &__gray {
+    background-color: $mainDarkGray;
+    color: $white;
+  }
+  &__lightGold {
+    background-color: $lightGold;
+  }
+}
+
+.text-color {
+  &__gold {
+    color: $gold;
+  }
+  &__oliveGreen {
+    color: $oliveGreen;
+  }
+  &__white {
+    color: $white;
+  }
+}
+
+.decore {
+  position: relative;
+  &::before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: $oliveGreen;
+  }
+  &::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: $oliveGreen;
+  }
+}
+
+.padding {
+  &__topBot-40 {
+    padding: 40px 0;
+  }
+}
+
+.grecaptcha-badge {
+  display: none;
+}

@@ -1,0 +1,53 @@
+.front-page {
+  @include media.max-width(large) {
+    padding-top: 75px;
+  }
+}
+
+.join-us {
+  height: 700px;
+  background-image: linear-gradient(
+      rgba($lightGold, 0.49),
+      rgba($lightGold, 0.49)
+    ),
+    url("../src/images/6446685.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .text-container {
+    padding: 0 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 50px;
+    @include media.max-width(medium) {
+      padding: 0 50px;
+      align-items: center;
+    }
+    h2 {
+      font-family: "Roboto";
+      font-size: 6rem;
+      color: #252525;
+      font-weight: 100;
+      @include media.max-width(large) {
+        font-size: 4rem;
+      }
+    }
+    p {
+      color: #252525;
+      font-size: 2rem;
+      font-weight: 300;
+      @include media.max-width(large) {
+        font-size: 1.5rem;
+      }
+    }
+    .social-buttons {
+      display: flex;
+      @include media.max-width(small) {
+        flex-direction: column;
+      }
+    }
+  }
+}

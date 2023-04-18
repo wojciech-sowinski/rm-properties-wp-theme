@@ -1,0 +1,63 @@
+.offer-search-form {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $gold;
+  max-width: 1000px;
+  height: 120px;
+  padding: 10px;
+  margin: -60px auto -60px auto;
+  z-index: 9997;
+  background-color: $white;
+  font-family: "Roboto Condensed";
+  box-shadow: 1px 6px 16px 0px rgba(0, 0, 0, 0.41);
+  -webkit-box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 1px 6px 10px 0px rgba(0, 0, 0, 0.21);
+  @include media.max-width(large) {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  form {
+    margin-top: -20px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    @include media.max-width(large) {
+      row-gap: 20px;
+      > * {
+        flex-grow: 1;
+      }
+    }
+    option:disabled {
+      color: rgb(199, 199, 199);
+      opacity: 0.3;
+    }
+
+    input,
+    select,
+    button {
+      color: $mainDarkGray;
+      padding: 10px 10px;
+      border: 1px solid $gold;
+      font-size: 1rem;
+      font-family: "Roboto Condensed";
+    }
+    button[type="submit"] {
+      background-color: $gold;
+      cursor: pointer;
+    }
+    button[type="reset"] {
+      background-color: $white;
+      cursor: pointer;
+    }
+  }
+}

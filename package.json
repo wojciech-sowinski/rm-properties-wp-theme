@@ -1,0 +1,20 @@
+{
+  "name": "rm-properties-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start"
+  },
+  "author": "Wojciech Sowiński / owliedev.pl",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@wordpress/scripts": "^25.4.0",
+    "leaflet": "^1.9.3"
+  }
+}

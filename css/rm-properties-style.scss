@@ -1,0 +1,26 @@
+@use "./modules/media";
+
+@import "modules/variables";
+@import "modules/root.scss";
+@import "modules/header.scss";
+@import "../node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css";
+@import "../node_modules/@splidejs/splide/dist/css/splide-core.min.css";
+@import "modules/front-page-slider";
+@import "modules/animations";
+@import "modules/buttons";
+@import "modules/animations";
+@import "modules/effects";
+@import "modules/section-recent-posts";
+@import "modules/page";
+@import "modules/page-banner";
+@import "modules/offer-banner";
+@import "modules/offer-page";
+@import "modules/offer-card";
+@import "modules/navs";
+@import "modules/section-recent-offers";
+@import "modules/footer";
+@import "modules/front-page-sections";
+@import "modules/offer-search-form";
+@import "modules/offerSorting";
+@import "modules/small-contact-form";
+@import "modules/media";

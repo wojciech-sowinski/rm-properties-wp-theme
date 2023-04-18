@@ -1,0 +1,90 @@
+form#aside-small-contact-form {
+  margin-top: -20px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  max-width: 400px;
+
+  label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  input,
+  select,
+  textarea {
+    color: $mainDarkGray;
+    padding: 5px 10px;
+    border: 1px solid $gold;
+    font-size: 0.9rem;
+    font-family: "Roboto Condensed";
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+  button {
+    background-color: $gold;
+    cursor: pointer;
+    @include media.max-width(medium) {
+      margin: auto;
+    }
+  }
+  button:disabled {
+    opacity: 0.6;
+    filter: grayscale(100%);
+  }
+}
+.message-response-sucess {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-weight: 600;
+  color: $oliveGreen;
+  align-items: center;
+}
+.message-response-fail {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-weight: 600;
+  color: $darkRed;
+  align-items: center;
+}
+
+#msg-sent-pop-up {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotateX(90deg) translateX(-50%);
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 30px;
+  z-index: 50;
+  transform-origin: bottom;
+
+  &.open {
+    animation: flip-from-bottom 5s;
+  }
+
+  a {
+    color: $white;
+  }
+
+  &.sucess {
+    background-color: $lightGreen;
+    color: $white;
+  }
+  &.fail {
+    background-color: $darkRed;
+    color: $white;
+  }
+}
